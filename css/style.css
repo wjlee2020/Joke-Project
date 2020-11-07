@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 body {
     background-color: #51bbc9;
-    font-family: "Permanent Market";
+    font-family: "Permanent Marker";
     font-size: 1.5rem;
     padding: 10px 100px 10px 10px;
 }
@@ -14,7 +13,7 @@ h1 {
 h1::before {
     content: '';
     position: absolute;
-    height: 6px;
+    height: 20px;
     width: 100%;
     background-color: white;
     bottom: 4px;
