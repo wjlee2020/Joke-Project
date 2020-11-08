@@ -1,63 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300;400&display=swap");
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-    background-color: #51bbc9;
-    font-family: "Permanent Marker";
-    font-size: 1.5rem;
-    padding: 10px 100px 10px 10px;
+  background-color: #51bbc9;
+  font-family: "Permanent Marker";
+  font-size: 1.5rem;
+  /* padding: 10px 100px 10px 10px; */
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-    position: relative;
+  position: relative;
 }
 
 h1::before {
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    background-color: white;
-    bottom: 4px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 36%;
+  background-color: white;
+  bottom: 4px;
+  z-index: -1;
 }
 
 button {
-    margin-bottom: 20px;
-    border: 3px solid black;
-    background-color: #8cd4de;
-    border-radius: 10px;
-    font-family: inherit; 
-    font-size: inherit;
-    cursor: pointer;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  background-color: #8cd4de;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .joke {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 .bubble {
-    display: inline-block;
-    position: relative;
-    padding: 30px 40px;
-    border-radius: 10px;
-    border: 3px solid black;
-    background-color: white;
-    margin-bottom: 60px;
+  display: inline-block;
+  position: relative;
+  padding: 30px 40px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: white;
+  margin-bottom: 60px;
 }
 
 .bubble::before {
-    content: '';
-    position: absolute;
-    left: 1;
-    bottom: -50px;
-    height: 50px;
-    width: 90px;
-    border-radius: 0 0 100%;
-    box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset,
+  content: "";
+  position: absolute;
+  left: 1;
+  bottom: -50px;
+  height: 50px;
+  width: 90px;
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset,
     -25px -2px 0 0 #000 inset;
+}
+
+/* footer */
+
+footer {
+  background-color: #222222;
+  color: white;
+  margin-top: auto;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ubuntu";
+}
+
+.footer-main-content {
+  width: 20%;
+  margin-right: 100px;
+}
+
+.footer-detail {
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.joke-api-link {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.5em;
+  padding: 0.4em;
+  background-color: #007bb5;
+  color: white;
+}
+
+.joke-api-link:hover,
+.joke-api-link:focus {
+  color: #fff;
+  background-color: #3b5998;
+}
+
+.footer-list {
+  padding: 0;
+}
+
+.footer-list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item a {
+  text-decoration: none;
+}
+
+.footer-list-item span {
+  font-size: 1rem;
+}
+
+.fa {
+  padding: 0.5em;
+  margin-bottom: 0.3em;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
