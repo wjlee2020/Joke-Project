@@ -35,6 +35,7 @@ async function getJoke() {
     const jokePromise = await fetch(
         'https://official-joke-api.appspot.com/jokes/programming/random'
     )
+    try {
     // a variable that will take the json data
     const joke = await jokePromise.json();
     //getting the setup from the joke and inserting it into our setupDiv element
@@ -55,6 +56,10 @@ async function getJoke() {
 
     punchlineBtn.classList.toggle('hidden');
     newJokeBtn.classList.toggle('hidden');
+    }
+    catch(err) {
+        console.log(`${err}: There was an error. Check your code`)
+    }
 }
 
 getJoke();
