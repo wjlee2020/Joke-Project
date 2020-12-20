@@ -32,11 +32,9 @@ newJokeBtn.addEventListener('click', getJoke);
 
 //creating the async function that will create the joke promise to fetch the url
 async function getJoke() {
-   
-    )
     try {
         const jokePromise = await fetch(
-            'https://official-joke-api.appspot.com/jokes/programming/random'
+            'https://official-joke-api.appspot.com/jokes/programming/random')
     // a variable that will take the json data
     const joke = await jokePromise.json();
     //getting the setup from the joke and inserting it into our setupDiv element
